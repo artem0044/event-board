@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/' Component={EventsBoardPage} />
-        <Route path='/RegistrationPage' Component={RegistrationPage} />
-        <Route path='/ParticipantPage' Component={ParticipantsPage} />
+        <Route path='/' element={<EventsBoardPage />} />
+        <Route path='/RegistrationPage' element={<RegistrationPage />} />
+        <Route path='/ParticipantPage' element={<ParticipantsPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </div>
