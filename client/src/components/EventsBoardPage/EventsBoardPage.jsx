@@ -40,8 +40,8 @@ const EventsBoardPage = () => {
 
 
   const handleSortChange = (e) => {
-    setCurrentPage(1);
     setEvents([]);
+    setCurrentPage(1);
     setSelectedSort(e.target.value);
   }
 

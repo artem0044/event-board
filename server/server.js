@@ -50,18 +50,18 @@ app.get('/api/getEvents/:currentPage/:selectedSort?', async (req, res) => {
 
   const totalEvents = await eventModel.countDocuments({});
 
-  const sortOptions = {
-    title: { title: 1 },
-    eventDate: { eventDate: 1 },
-    organizer: { organizer: 1 }
-  };
+  // const sortOptions = {
+  //   title: { title: 1 },
+  //   eventDate: { eventDate: 1 },
+  //   organizer: { organizer: 1 }
+  // };
 
   // const events = await eventModel.find({}).sort(sortOptions[selectedSort]).skip(pageToSkip).limit(limit);
   let eventsQuery = eventModel.find({}).skip(pageToSkip).limit(limit);
 
   if (selectedSort === 'title') {
     eventsQuery = eventsQuery.sort({ title: 1 });
-  } else if (selectedSort === 'event_date') {
+  } else if (selectedSort === 'eventDate') {
     eventsQuery = eventsQuery.sort({ event_date: 1 });
   } else if (selectedSort === 'organizer') {
     eventsQuery = eventsQuery.sort({ organizer: 1 });
