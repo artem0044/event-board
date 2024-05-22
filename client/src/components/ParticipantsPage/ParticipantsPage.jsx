@@ -18,7 +18,7 @@ const ParticipantsPage = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`http://localhost:3001/api/getEventUsers/${eventId}`);
+        const res = await fetch(`https://eventboard-6yuf.onrender.com/api/getEventUsers/${eventId}`);
         const { eventTitle, participants, registrationsPerDay } = await res.json();
 
         const dates = registrationsPerDay.map(({ _id: dateObj }) => {

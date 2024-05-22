@@ -48,7 +48,7 @@ const RegistrationPage = () => {
       return;
     }
 
-    const res = await fetch('http://localhost:3001/api/createUser', {
+    const res = await fetch('https://eventboard-6yuf.onrender.com/api/createUser', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

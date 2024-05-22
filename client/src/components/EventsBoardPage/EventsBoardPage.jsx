@@ -15,7 +15,7 @@ const EventsBoardPage = () => {
     const fetchData = async () => {
       setLoading(true);
 
-      const res = await fetch(`http://localhost:3001/api/getEvents/${currentPage}/${selectedSort}`);
+      const res = await fetch(`https://eventboard-6yuf.onrender.com/api/getEvents/${currentPage}/${selectedSort}`);
       let { events: newEvents, totalPages } = await res.json();
 
 
