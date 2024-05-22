@@ -27,7 +27,7 @@ const fetchEvents = async () => {
   pageNumber++
 }
 
-const INTERVAL_MS = 21600000; // 6 hours
+const INTERVAL_MS = 18000000 ; // 5 hours
 
 const startFetching = async () => {
   await fetchEvents();
