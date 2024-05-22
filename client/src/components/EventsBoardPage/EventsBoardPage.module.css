@@ -1,0 +1,31 @@
+.headerText {
+    font-size: 30px;
+}
+
+.eventMessage {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.Header {
+    display      : flex;
+    align-items  : center;
+    margin-bottom: 20px;
+}
+
+.filterContainer {
+    margin-left: 40px;
+}
+
+.eventCardCont {
+    display              : grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap                  : 40px;
+}
+
+.filterSelection {
+    margin-left: 10px;
+    width      : 150px;
+    height     : 20px;
+    outline    : none;
+}

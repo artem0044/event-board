@@ -1,0 +1,34 @@
+
+.loading {
+    text-align: center;
+    font-size : 16px;
+    margin-top: 20px;
+}
+
+.pagination {
+    display        : flex;
+    justify-content: center;
+    margin-top     : 20px;
+}
+
+.pageNumber,
+.pageNav {
+    padding         : 5px 10px;
+    margin          : 0 5px;
+    border          : 1px solid #ddd;
+    border-radius   : 4px;
+    background-color: #fff;
+    cursor          : pointer;
+}
+
+.pageNumber.active {
+    background-color: #007bff;
+    color           : #fff;
+    border-color    : #007bff;
+}
+
+.pageNumber:disabled,
+.pageNav:disabled {
+    cursor : not-allowed;
+    opacity: 0.5;
+}

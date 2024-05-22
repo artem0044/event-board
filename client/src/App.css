@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+.App{
+  padding: 50px;
+}
+
+body{
+  background-color: #eeeeeefa;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: content-box;
+  margin    : 0;
+  padding   : 0;
+  font-family: 'Reddit Sans';
+}

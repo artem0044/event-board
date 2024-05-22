@@ -1,0 +1,59 @@
+.participantCard {
+    display            : flex;
+    align-items        : center;
+    justify-content    : center;
+    flex-direction     : column;
+    /* width           : fit-content; */
+    width              : 400px;
+    min-height         : 150px;
+    background-color   : #dddddd;
+    border-radius      : 5px;
+    padding            : 10px;
+    font-size          : 15px;
+    word-break         : break-word;
+}
+
+.bar {
+    width : 400px;
+    height: 200px;
+}
+
+.barCont {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    flex-wrap: wrap;
+}
+
+.searchInp {
+    margin-top   : 20px;
+    width        : 400px;
+    height       : 37px;
+    outline      : none;
+    border       : none;
+    border-radius: 10px;
+    font-size    : 20px;
+    padding      : 10px;
+}
+
+.participantsCardCont {
+    margin-top           : 30px;
+    display              : grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap                  : 70px;
+}
+
+.text {
+    font-size: 28px;
+}
+
+.text.smaller {
+    font-size : 26px;
+    margin-top: 5px;
+}
+
+.warning {
+    text-align: center;
+    margin-top: 50px;
+    font-size : 24px;
+}
